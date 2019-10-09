@@ -1,0 +1,16 @@
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+//Libraries
+def arouterApiVersion = '1.5.0'
+def arouterCompilerVersion = "1.2.2"
+
+project.ext {
+
+    dependencies = [
+            "arouterApi"     : "com.alibaba:arouter-api:${arouterApiVersion}",
+            "arouterCompiler": "com.alibaba:arouter-compiler:${arouterCompilerVersion}"
+    ]
+}
